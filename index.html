@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="p-5 bg-[#C4D7B2] shadow md:flex md:items-center md:justify-between md:h-32 lg:h-44">
+    <div class="flex justify-between items-center ">
+      <span class="cursor-pointer ml-20">
+        <img class="h-16 inline" src="images/simple.png">
+      </span>
+
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+
+    <ul
+      class="md:flex md:items-center  md:z-auto md:static absolute bg-[#C4D7B2]  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 font-semibold list">
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#home" class="text-xl hover:text-[#F7FFE5] duration-500">HOME</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#service" class="text-xl hover:text-[#F7FFE5] duration-500">SERVICE</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#gift" class="text-xl hover:text-[#F7FFE5] duration-500">GIFTS</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#contact" class="text-xl hover:text-[#F7FFE5] duration-500">CONTACT</a>
+      </li>
+      <!-- <li class="mx-4 my-6 md:my-0">
+          <a href="#" class="text-xl hover:text-cyan-500 duration-500">BLOG'S</a>
+        </li> -->
+
+      <button
+        class="bg-[#A0C49D] text-white duration-500 px-6 py-2 mx-4 hover:bg-[#E1ECC8] rounded hover:text-black list">
+        <a href="#gift">SHOP</a>
+      </button>
+      <h2 class=""></h2>
+    </ul>
+  </nav>
+
+  <!--MAIN SECTION-->
+  <main>
+    <section class="bg-[url('./images/banner.jpg')] bg-cover h-screen md:h-full" id="#home">
+      <div class="py-5">
+        <!--text-4xl md:text-5xl lg:text-6xl text-center mt-[120px] text-white font-bold-->
+        <h1 class="md:text-5xl lg:text-[100px] text-[50px] text-center md:mt-[120px] text-white font-bold custom">Custom
+          Dried Flower Bouquets</h1>
+        <div class="text-center mx-auto">
+          <p class="mt-5 text-white md:text-[30px] text-[20px] text-custom">Free delivery on orders over $79.</p>
+          <div class="mt-10 text-[20px] text-black font-bold">
+            <button type="button"
+              class="bg-[#E1ECC8] rounded-lg py-2 w-[150px] hover:bg-[#A0C49D] hover:text-white custom" id="shop-btn"><a
+                href="#gift">SHOP</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-between p-20 mt-40">
+        <ul class="flex flex-wrap justify-center md:justify-start">
+
+          <!-- Instagram icon-->
+          <li class="ms-10"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff"
+                class="bi bi-instagram" viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+              </svg></a>
+          </li>
+
+          <!-- Twitter icon -->
+          <li class="ms-10"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff"
+                class="bi bi-twitter" viewBox="0 0 16 16">
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+              </svg></svg></a>
+          </li>
+
+          <!-- Facebook icon -->
+          <li class="ms-10"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff"
+                class="bi bi-facebook" viewBox="0 0 16 16">
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+              </svg></a>
+          </li>
+
+
+          <!-- Envelope/Email Icon-->
+          <li class="ms-10"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff"
+                class="bi bi-envelope" viewBox="0 0 16 16">
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+              </svg></a>
+          </li>
+        </ul>
+
+        <div class="flex ms-10">
+          <a class="text-white text-[20px] ms-10" href="#popular">DRIED FLOWERS COLLECTIONS </a>
+          <p class="font-bold ms-5"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="#ffffff"
+              class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR SERVICES -->
+    <section class="bg-[#C4D7B2] pt-20">
+      <div class="text-center" id="service">
+        <h4 class="text-[#F7FFE5] text-2xl">THIS IS WHAT WE DO</h4>
+        <p class="text-6xl my-16 custom">Our Services</p>
+      </div>
+
+      <!-- Cards here -->
+      <div class=" md:pb-20 lg:pb-20 flex flex-wrap justify-center pb-20">
+
+        <!-- Card 1 -->
+        <div class="w-full md:w-1/3 p-4">
+          <div class="max-w-sm rounded-t-[50%] overflow-hidden shadow-lg mx-auto">
+            <img class="w-full h-[350px]" src="./images/pic2.jpg" alt="Custom Bouquets">
+            <div class="px-6 py-4 bg-[#A0C49D] h-64">
+              <div class="font-bold text-[30px] mb-2 text-center custom">Custom Bouquet</div>
+              <p class="text-gray-700 text-[16px] text-custom">
+                Do you have an acquired taste? From your favourite to the rarest hidden secrets, we have what you need.
+                <span class="more-text hidden">
+                  We turn your unique preferences into beautifully crafted arrangements that express your individuality.
+                </span>
+              </p>
+              <div class="block content-center mx-28 my-8">
+                <button class="toggle-btn my-4 text-black-500 focus:outline-none uppercase font-semibold" onclick="toggleReadMore()">Read
+                  More</button>
+                <button
+                  class="hide-btn hidden my-auto text-center text-black-500 focus:outline-none uppercase font-semibold" onclick="toggleReadMore()">Hide</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="w-full md:w-1/3 p-4">
+          <div class="max-w-sm rounded-t-[50%] overflow-hidden shadow-lg mx-auto">
+            <img class="w-full h-[350px]" src="./images/three-flowers.jpg" alt="Premade Bouquet">
+            <div class="px-6 py-4 bg-[#A0C49D] h-64">
+              <div class="font-bold text-[30px] mb-2 text-center custom">Premade Bouquet</div>
+              <p class="text-gray-700 text-[16px] text-custom">
+                Choose from our carefully curated selection of pre-made bouquets to add a touch of natural beauty and
+                elegance to any occasion.
+                <span class="more-text hidden">
+                  Our bouquets are crafted with precision
+                  and love to make your moments truly memorable.
+                </span>
+              </p>
+              <div class="block content-center mx-28 my-8">
+                <button class="toggle-btn my-4 text-black-500 focus:outline-none uppercase font-semibold" onclick="toggleReadMore()">Read
+                  More</button>
+                <button class="hide-btn hidden my-auto text-black-500 focus:outline-none uppercase font-semibold" onclick="toggleReadMore()">Hide</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="w-full md:w-1/3 p-4">
+          <div class="max-w-sm rounded-t-[50%] overflow-hidden shadow-lg mx-auto">
+            <img class="w-full h-[350px]" src="./images/pic3.jpg" alt="Occasional Bouquet">
+            <div class="px-6 py-4 bg-[#A0C49D] h-64">
+              <div class="font-bold text-[30px] mb-2 text-center custom">Occasional Bouquet</div>
+              <p class="text-gray-700 text-[16px] text-custom">
+                Our florists are passionate about creating the most beautiful contribution of selected dried flowers.
+                <span class="more-text hidden">
+                  Each bouquet is a masterpiece, thoughtfully designed to make every occasion unforgettable.
+                </span>
+              </p>
+              <div class="block content-center mx-28 my-8">
+                <button class="toggle-btn my-4 text-black-500 focus:outline-none uppercase font-semibold" onclick="toggleReadMore()">Read
+                  More</button>
+                <button class="hide-btn hidden my-auto text-black-500 focus:outline-none uppercase font-semibold" onclick="toggleReadMore()">Hide</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--GIFT IDEAS SECTION-->
+
+    <section>
+      <div class="bg-[#F7FFE5]" id="gift">
+        <div class="flex flex-col-reverse md:flex-row justify-evenly items-center">
+          <div class="w-full md:w-1/2 text-center px-4 md:px-12 py-12">
+            <h3 class="uppercase mt-6 md:mt-16 text-[#A0C49D] text-[20px]">Remember your loved ones</h3>
+            <h1 class="my-4 text-[30px] font-semibold custom">Gift Ideas That Last Longer</h1>
+            <p class="my-6 md:my-8 text-[16px] text-custom">
+              Who doesn't love flowers! Whether you're giving or receiving flowers, the only downside is how short-lived
+              the happiness with a fresh bouquet of cut flowers. We are passionate about creating bouquets that can last
+              up to years. Ask our staff for more information about your perfect bouquet.
+            </p>
+            <button type="button"
+              class="my-4 bg-[#A0C49D] text-black w-32 p-2 rounded-md uppercase font-semibold hover:bg-[#E1ECC8]">Let's
+              Go</button>
+          </div>
+          <img src="./images/white-flwr.jpg"
+            class="w-[400px] md:w-[600px] h-[600px] rounded-b-[50%] border-2 border-slate-950 mx-auto z-1"
+            alt="White Flower">
+        </div>
+      </div>
+
+
+      <!-- SEE WHAT'S POPULAR SECTION -->
+      <div class="bg-[#C4D7B2] pb-20" id="popular">
+        <div class="text-center pb-8">
+          <h5 class="uppercase pt-16">Dried Flower Collection</h5>
+          <h1 class="my-8 text-[30px] font-semibold custom">See What's Popular</h1>
+        </div>
+
+
+        <!--IMAGES HERE-->
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+
+          <!-- Image 1 -->
+          <div class="flex flex-col items-center">
+            <img src="./images/four.jpg" class="w-[300px] h-[300px] border-2 border-slate-950" alt="Image One">
+            <div class="mt-2 flex gap-2">
+              <button type="button" class="m-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                </svg>
+              </button>
+              <button type="button" class="m-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-dash-square-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm2.5 7.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1z" />
+                </svg>
+              </button>
+              <button type="button" class="m-2 uppercase">Share</button>
+            </div>
+          </div>
+
+          <!-- Image 2 -->
+          <div class="flex flex-col items-center">
+            <img src="./images/two.jpg" class="w-[300px] h-[300px] border-2 border-slate-950" alt="Image Two">
+            <div class="mt-2 flex gap-2">
+              <button type="button" class="m-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                </svg>
+              </button>
+              <button type="button" class="m-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-dash-square-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm2.5 7.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1z" />
+                </svg>
+              </button>
+              <button type="button" class="m-2 uppercase">Share</button>
+            </div>
+          </div>
+
+          <!-- Image 3 -->
+          <div class="flex flex-col items-center">
+            <img src="./images/three.jpg" class="w-[300px] h-[300px] border-2 border-slate-950" alt="Image Two">
+            <div class="mt-2 flex gap-2">
+              <button type="button" class="m-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                </svg>
+              </button>
+              <button type="button" class="m-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-dash-square-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm2.5 7.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1z" />
+                </svg>
+              </button>
+              <button type="button" class="m-2 uppercase">Share</button>
+            </div>
+          </div>
+
+          <!-- Image 4 -->
+          <div class="flex flex-col items-center">
+            <img src="./images/seven.jpg" class="w-[300px] h-[300px] border-2 border-slate-950" alt="Image Two">
+            <div class="mt-2 flex gap-2">
+              <button type="button" class="m-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                </svg>
+              </button>
+              <button type="button" class="m-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-dash-square-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm2.5 7.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1z" />
+                </svg>
+              </button>
+              <button type="button" class="m-2 uppercase">Share</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--TALK TO OUR STAFF SECTION-->
+    <section>
+      <div class="bg-[#E1ECC8] pt-20" id="contact">
+        <div
+          class="bg-[#C4D7B2] w-[300px] h-[450px] md:w-[600px] md:h-[450px] lg:w-[600px] lg:h-[450px] rounded-t-[50%] pt-20 mx-auto">
+          <div class="mt-5 text-center px-8">
+            <h1 class="my-4 text-[30px] font-semibold custom">Talk To Our Staff</h1>
+            <p class="text my-8 text-[18px]">Trouble choosing your bouquet? Talk to our friendly customer service who
+              can help you doing your journey
+              to finding your dream bouquet. We are a long line of passionate florist and believe everyone has their
+              right bouquet.
+            </p>
+            <button type="button"
+              class="my-4 bg-[#E1ECC8] text-black w-32 p-2 rounded-md uppercase font-semibold hover:bg-[#A0C49D] hover:text-white">
+              Let's
+              talk!</button>
+          </div>
+        </div>
+        <hr class="border-2 border-slate-950">
+      </div>
+    </section>
+  </main>
+
+  <!--END OF MAIN-->
+
+  <footer>
+    <div class=" bg-[#E1ECC8] flex flex-col md:flex-row justify-between items-center py-4">
+      <div class="ml-8 pt-4">
+        <a href="/" class=""><img class="w-32 h-16" src="./images/simple.png" alt="rosas"></a>
+        <p class="mt-2 md:mt-4">Custom dried flower arrangement that last.</p>
+        <input type="text" placeholder="   Email Address" class="p-2"> <button type="button"
+          class="my-4 bg-[#C4D7B2] w-32 p-2 rounded-md uppercase font-semibold ml-4"> SUBSCRIBE</button>
+      </div>
+      <div class="mt-4 md:mt-0 uppercase text-left">
+        <p>+123 456 7890</p>
+        <p>hello@rosas.com</p>
+        <p>Find a store</p>
+      </div>
+      <div class="mt-4 md:mt-0 uppercase text-left">
+        <p>contact us</p>
+        <p>ordering and payment</p>
+        <p>shipping</p>
+        <p>returning</p>
+        <p>faq</p>
+        <p>care guide</p>
+      </div>
+      <div class="mt-4 md:mt-0 uppercase md:mr-8 lg:mr-8 text-left">
+        <p>about us</p>
+        <p>work with us</p>
+        <p>privacy policy</p>
+        <p>terms and condition</p>
+      </div>
+    </div>
+    <div class="bg-[#C4D7B2] flex justify-between">
+      <p class="text-[#F7FFE5] my-4 mx-8">All rights reserved 2023.</p>
+      <div class="flex justify-between my-4 mx-8">
+        <ul class="flex">
+          <!-- Instagram icon-->
+          <li class="ms-10"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff"
+                class="bi bi-instagram" viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+              </svg></a>
+          </li>
+
+          <!-- Twitter icon -->
+          <li class="ms-10"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff"
+                class="bi bi-twitter" viewBox="0 0 16 16">
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+              </svg></svg></a>
+          </li>
+
+          <!-- Facebook icon -->
+          <li class="ms-10"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff"
+                class="bi bi-facebook" viewBox="0 0 16 16">
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+              </svg></a>
+          </li>
+
+
+          <!-- Envelope/Email Icon-->
+          <li class="ms-10"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff"
+                class="bi bi-envelope" viewBox="0 0 16 16">
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+              </svg></a>
+          </li>
+        </ul>
+      </div>
+
+  </footer>
+
+
+
+
+  <script src="index.js"> </script>
+</body>
+
+</html>
+</body>
+
+</html>

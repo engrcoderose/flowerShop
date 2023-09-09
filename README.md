@@ -1,6 +1,6 @@
-# Flower Shop Landing Page
-
+# Responsive Flower Shop Website
 Welcome to the Flower Shop Landing Page! This project is a simple web page for a flower shop showcasing various types of bouquets and arrangements.
+This responsive flower shop website is designed to provide a delightful and user-friendly experience to visitors on both desktop and mobile devices. With a clean and modern design, it offers a seamless transition between various screen sizes, ensuring that customers can easily browse and shop for custom dried flower bouquets from anywhere.
 
 ## Features
 

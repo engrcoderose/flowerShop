@@ -9,10 +9,12 @@ Welcome to the Flower Shop Landing Page! This project is a simple web page for a
 - "Hide" button to hide the additional information.
 - Responsive design using inline Tailwind CSS for a visually pleasing layout.
 
-## Installation
-No installation is required to run this project. Simply open the index.html file in a web browser to view the Flower Shop Landing Page.
+## Installations
+
+- No installation is required to run this project. Simply open the index.html file in a web browser to view the Flower Shop Landing Page.
 
 ## Technologies Used
-HTML
-Tailwind CSS
-JavaScript
+
+- HTML
+- Tailwind CSS
+- JavaScript
